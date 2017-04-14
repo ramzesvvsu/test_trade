@@ -7,7 +7,9 @@
 			<Metadata name="AccumulationRegister.ОстаткиТоваров.Dimension.Товар" id="eb853b0c-a59e-4f78-bb31-beba143f7827"/>
 		</Metadata>
 		<Metadata name="Catalog.Склады" id="cdbed6cb-79b9-4080-a45a-0b8a62b88580" configVersion="39f073260d2f5f4498b190af5ffdd2f200000000"/>
-		<Metadata name="Catalog.Товары" id="d23c2494-5986-466f-bdd5-ea91ef80ee16" configVersion="f0d125addc20664da513b391053dcc3b00000000"/>
+		<Metadata name="Catalog.Товары" id="d23c2494-5986-466f-bdd5-ea91ef80ee16" configVersion="5ae565f4b3370a4ca1838d3cd1caa23c00000000">
+			<Metadata name="Catalog.Товары.Attribute.Реквизит1" id="ea780786-2733-4e99-bada-8e1d8cfdc5e1"/>
+		</Metadata>
 		<Metadata name="Configuration.Конфигурация" id="c0484114-4aad-4125-86ed-71019aee11de" configVersion="f8b025a095d2ad4e8d48649874b6a1a600000000"/>
 		<Metadata name="Document.ПриходнаяНакладная" id="ab57524b-f701-4525-93f5-ecbcb67a959e" configVersion="f0a27eef2cc3d3498aa4ea88448d4b2300000000">
 			<Metadata name="Document.ПриходнаяНакладная.Attribute.Склад" id="097a8004-d59c-4a8c-8c88-2ceabee2d32a"/>
