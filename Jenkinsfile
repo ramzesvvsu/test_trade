@@ -35,3 +35,11 @@ pipeline{
 
     }
 }
+
+def cmd(command) {
+    if (isUnix()) {
+        sh "${command}"
+    } else {
+        bat "chcp 65001\n${commdnd}"
+    }
+}
