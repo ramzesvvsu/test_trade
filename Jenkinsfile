@@ -17,7 +17,7 @@ pipeline{
             steps{
                 timestamps {
                     script {
-                        connectionString = "\"/${env.Server1C}\\${env.Database1C}\""
+                        connectionString = "\"${env.Server1C}\\${env.Database1C}\""
                         uccode = "\"123\""
                         lockParams = "-lockmessage \"test\" -lockuccode ${uccode}"
                         versionText = readFile encodig: 'UTF-8', file: 'VERSION'
