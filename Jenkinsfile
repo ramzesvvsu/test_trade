@@ -26,8 +26,8 @@ pipeline{
                     //cmd("oscript --version")
                     cmd("deployka session lock -ras ${env.Server1C} -db ${env.Database1C} ${lockParams}")
                     cmd("deployka session kill -ras ${env.Server1C} -db ${env.Database1C} ${lockParams}")
-                    cmd("deployka loadrepo ${connectionString} \"${env.StoragePath}\" -storage-user ${env.Storage_Usr} -storage-pwd ${env.Storage_Psw} -uccode ${uccode} -v8version 8.3.10")
-                    cmd("deployka dbupdate ${connectionString} -allow-warnings -uccode ${uccode} -v8version 8.3.10")
+                    cmd("deployka loadrepo //s${connectionString} \"${env.StoragePath}\" -storage-user ${env.Storage_Usr} -storage-pwd ${env.Storage_Psw} -uccode ${uccode} -v8version 8.3.10")
+                    cmd("deployka dbupdate //s${connectionString} -allow-warnings -uccode ${uccode} -v8version 8.3.10")
                     cmd("deployka session unlock -ras ${env.Server1C} -db ${env.Database1C}")
                  /**/  
                 }
