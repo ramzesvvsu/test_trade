@@ -24,11 +24,11 @@ pipeline{
                         versionValue = (versionText =~ /<VERSION>(.*)<\/VERSION>/)[0][1]
                     }
                     //cmd("oscript --version")
-                    cmd("deployka session lock -ras ${end.Server1C} -db ${env.Database1C} ${lockParams}")
-                    /*cmd("deployka session kill -ras ${end.Server1C} -db ${env.Database1C} ${lockParams}")
+                    cmd("deployka session lock -ras ${env.Server1C} -db ${env.Database1C} ${lockParams}")
+                    /*cmd("deployka session kill -ras ${env.Server1C} -db ${env.Database1C} ${lockParams}")
                     cmd("deployka loadrepo ${connectionString} \"${env.StoragePath}\" -storage-user ${env.Storage_Usr} -storage-pwd ${env.Storage_Psw} -uccpde ${uccode}")
                     cmd("deployka dbupdate ${connectionString} -allow-warnings -uccode ${uccode}")
-                    cmd("deployka session unlock -ras ${end.Server1C} -db ${env.Database1C}")
+                    cmd("deployka session unlock -ras ${env.Server1C} -db ${env.Database1C}")
                  */  
                 }
             }
