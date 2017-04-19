@@ -10,7 +10,7 @@ pipeline{
         label 'win'
     }
     environment {
-        Storage = credentials('Storage_Trade_CiBot')
+        Storage = credentials('Storage_trade_CiBot')
     }
     stages {
         stage('Обновление тетового контура'){
