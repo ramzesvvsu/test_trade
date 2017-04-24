@@ -7,7 +7,7 @@ def versionValue
 
 pipeline{
     agent{
-        label 'win'
+        label 'VanessaTest2'
     }
     environment {
         Storage = credentials('Storage_trade_CiBot')
