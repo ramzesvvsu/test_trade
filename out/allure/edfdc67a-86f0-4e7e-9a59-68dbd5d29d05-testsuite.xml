@@ -2,110 +2,110 @@
 <ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<name xmlns="">ПриходованиеТовара</name>
 	<test-cases xmlns="" xmlns:d2p1="urn:model.allure.qatools.yandex.ru">
-		<test-case start="63628634009475" stop="63628634032117" status="passed">
+		<test-case start="63628634135624" stop="63628634152304" status="passed">
 			<name>Приходование товара</name>
 			<steps>
-				<step start="63628634011528" stop="63628634021414" status="passed">
+				<step start="63628634136352" stop="63628634144810" status="passed">
 					<name>Дано Я открыл новый сеанс TestClient или подключил уже существующий</name>
 					<title>Дано Я открыл новый сеанс TestClient или подключил уже существующий</title>
 				</step>
-				<step start="63628634021769" stop="63628634022557" status="passed">
+				<step start="63628634145164" stop="63628634145955" status="passed">
 					<name>И    Я закрыл все окна клиентского приложения</name>
 					<title>И    Я закрыл все окна клиентского приложения</title>
 				</step>
-				<step start="63628634022696" stop="63628634024412" status="passed">
+				<step start="63628634146204" stop="63628634147078" status="passed">
 					<name>И    Я создаю fixtures по макету "Макет"</name>
 					<title>И    Я создаю fixtures по макету "Макет"</title>
 				</step>
-				<step start="63628634024586" stop="63628634024603" status="passed">
+				<step start="63628634147218" stop="63628634147235" status="passed">
 					<name>Когда Я нажимаю кнопку командного интерфейса "Приходная накладная"</name>
 					<title>Когда Я нажимаю кнопку командного интерфейса "Приходная накладная"</title>
 				</step>
-				<step start="63628634024794" stop="63628634024896" status="passed">
+				<step start="63628634147416" stop="63628634147500" status="passed">
 					<name>Тогда открылось окно "Приходная накладная"</name>
 					<title>Тогда открылось окно "Приходная накладная"</title>
 				</step>
-				<step start="63628634025194" stop="63628634025223" status="passed">
+				<step start="63628634147623" stop="63628634147655" status="passed">
 					<name>И     я нажимаю на кнопку "Создать"</name>
 					<title>И     я нажимаю на кнопку "Создать"</title>
 				</step>
-				<step start="63628634025402" stop="63628634025424" status="passed">
+				<step start="63628634147821" stop="63628634147842" status="passed">
 					<name>Тогда открылось окно "Приходная накладная (создание)"</name>
 					<title>Тогда открылось окно "Приходная накладная (создание)"</title>
 				</step>
-				<step start="63628634025608" stop="63628634025734" status="passed">
+				<step start="63628634148025" stop="63628634148155" status="passed">
 					<name>И     я выбираю значение реквизита "Склад" из формы списка</name>
 					<title>И     я выбираю значение реквизита "Склад" из формы списка</title>
 				</step>
-				<step start="63628634026009" stop="63628634026088" status="passed">
+				<step start="63628634148429" stop="63628634148437" status="passed">
 					<name>Тогда открылось окно "Склады"</name>
 					<title>Тогда открылось окно "Склады"</title>
 				</step>
-				<step start="63628634026218" stop="63628634026250" status="passed">
+				<step start="63628634148641" stop="63628634148673" status="passed">
 					<name>И     В форме "Склады" в таблице "Список" я перехожу к строке:</name>
 					<title>И     В форме "Склады" в таблице "Список" я перехожу к строке:</title>
 				</step>
-				<step start="63628634026413" stop="63628634026455" status="passed">
+				<step start="63628634148841" stop="63628634148879" status="passed">
 					<name>И     я нажимаю на кнопку "Выбрать"</name>
 					<title>И     я нажимаю на кнопку "Выбрать"</title>
 				</step>
-				<step start="63628634026618" stop="63628634026628" status="passed">
+				<step start="63628634149042" stop="63628634149050" status="passed">
 					<name>Тогда открылось окно "Приходная накладная (создание) *"</name>
 					<title>Тогда открылось окно "Приходная накладная (создание) *"</title>
 				</step>
-				<step start="63628634026824" stop="63628634026836" status="passed">
+				<step start="63628634149247" stop="63628634149261" status="passed">
 					<name>И     я перехожу к следующему реквизиту</name>
 					<title>И     я перехожу к следующему реквизиту</title>
 				</step>
-				<step start="63628634027023" stop="63628634027074" status="passed">
+				<step start="63628634149449" stop="63628634149487" status="passed">
 					<name>И     в ТЧ "Товары" я нажимаю на кнопку "Добавить"</name>
 					<title>И     в ТЧ "Товары" я нажимаю на кнопку "Добавить"</title>
 				</step>
-				<step start="63628634027229" stop="63628634027261" status="passed">
+				<step start="63628634149648" stop="63628634149678" status="passed">
 					<name>И     в ТЧ "Товары" я выбираю значение реквизита "Товар" из формы списка</name>
 					<title>И     в ТЧ "Товары" я выбираю значение реквизита "Товар" из формы списка</title>
 				</step>
-				<step start="63628634027430" stop="63628634027904" status="passed">
+				<step start="63628634149854" stop="63628634149944" status="passed">
 					<name>Тогда открылось окно "Товары"</name>
 					<title>Тогда открылось окно "Товары"</title>
 				</step>
-				<step start="63628634028039" stop="63628634028072" status="passed">
+				<step start="63628634150263" stop="63628634150297" status="passed">
 					<name>И     В форме "Товары" в таблице "Список" я перехожу к строке:</name>
 					<title>И     В форме "Товары" в таблице "Список" я перехожу к строке:</title>
 				</step>
-				<step start="63628634028244" stop="63628634028282" status="passed">
+				<step start="63628634150464" stop="63628634150502" status="passed">
 					<name>И     я нажимаю на кнопку "Выбрать"</name>
 					<title>И     я нажимаю на кнопку "Выбрать"</title>
 				</step>
-				<step start="63628634028444" stop="63628634028452" status="passed">
+				<step start="63628634150664" stop="63628634150674" status="passed">
 					<name>Тогда открылось окно "Приходная накладная (создание) *"</name>
 					<title>Тогда открылось окно "Приходная накладная (создание) *"</title>
 				</step>
-				<step start="63628634028652" stop="63628634028681" status="passed">
+				<step start="63628634150871" stop="63628634150898" status="passed">
 					<name>И     в ТЧ "Товары" я активизирую поле "Количество"</name>
 					<title>И     в ТЧ "Товары" я активизирую поле "Количество"</title>
 				</step>
-				<step start="63628634028852" stop="63628634028884" status="passed">
+				<step start="63628634151073" stop="63628634151106" status="passed">
 					<name>И     в ТЧ "Товары" в поле "Количество" я ввожу текст "5,000"</name>
 					<title>И     в ТЧ "Товары" в поле "Количество" я ввожу текст "5,000"</title>
 				</step>
-				<step start="63628634029060" stop="63628634029078" status="passed">
+				<step start="63628634151273" stop="63628634151293" status="passed">
 					<name>И     В форме "Приходная накладная (создание) *" в ТЧ "Товары" я завершаю редактирование строки</name>
 					<title>И     В форме "Приходная накладная (создание) *" в ТЧ "Товары" я завершаю редактирование строки</title>
 				</step>
-				<step start="63628634029260" stop="63628634029294" status="passed">
+				<step start="63628634151480" stop="63628634151515" status="passed">
 					<name>И     я нажимаю на кнопку "Провести"</name>
 					<title>И     я нажимаю на кнопку "Провести"</title>
 				</step>
-				<step start="63628634029466" stop="63628634031545" status="passed">
+				<step start="63628634151680" stop="63628634151762" status="passed">
 					<name>Когда В текущем окне я нажимаю кнопку командного интерфейса "Остатки товаров"</name>
 					<title>Когда В текущем окне я нажимаю кнопку командного интерфейса "Остатки товаров"</title>
 				</step>
-				<step start="63628634031697" stop="63628634031789" status="passed">
+				<step start="63628634151891" stop="63628634151988" status="passed">
 					<name>Тогда таблица формы с именем "Список" стала равной:</name>
 					<title>Тогда таблица формы с именем "Список" стала равной:</title>
 				</step>
-				<step start="63628634032104" stop="63628634032116" status="passed">
+				<step start="63628634152291" stop="63628634152303" status="passed">
 					<name>И     Я закрываю окно "Приходная накладная * от *"</name>
 					<title>И     Я закрываю окно "Приходная накладная * от *"</title>
 				</step>
