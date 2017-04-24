@@ -2,7 +2,7 @@
     "ВыполнитьСценарии": true,
     "ЗавершатьРаботуСистемы": false,
     "ЗакрытьTestClientПослеЗапускаСценариев":true,
-    "КаталогФич":"$workspaceroot/features",
+    "КаталогФич":"$workspaceRoot/features",
     "КаталогБиблиотек": [
         "./featues/Librares"
     ],
