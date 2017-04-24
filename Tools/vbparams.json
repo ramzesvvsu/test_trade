@@ -1,10 +1,10 @@
 {
     "ВыполнитьСценарии": true,
-    "ЗавершатьРаботуСистемы": false,
+    "ЗавершатьРаботуСистемы": true,
     "ЗакрытьTestClientПослеЗапускаСценариев":true,
     "КаталогФич":"$workspaceRoot/features",
-    "КаталогБиблиотек": [
-        "./featues/Librares"
+    "КаталогиБиблиотек": [
+        "./features/Libraries"
     ],
     "ДелатьОтчетВФорматеАлюр": true,
     "КаталогOutputAllureБазовый": "$workspaceRoot/out/allure",
