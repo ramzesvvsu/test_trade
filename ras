@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\1cv8\8.3.10.2168\bin\ras.exe" cluster --service --port=1545 localhost:1540
