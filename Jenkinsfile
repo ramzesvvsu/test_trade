@@ -48,7 +48,7 @@ pipeline{
             steps{
                 script{
                     def allurePath = tool name: 'Allure 1.5.2', type: 'allure'
-                    cmd("${allurePath}/bit/allure generate -o out/allure-report out/allures")
+                    cmd("${allurePath}/bin/allure generate -o out/allure-report out/allures")
 
                 }
                 publishHTML target: [
