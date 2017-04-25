@@ -43,6 +43,26 @@ pipeline{
 
             }
         }
+        stage('Public result')
+        {
+            steps{
+                script{
+                    def allurePath = tool name: 'Allure 1.5.2', type: 'allure'
+                    cmd("${allurePath}/bit/allure generate -o out/allure-report out/allures")
+
+                }
+                publishHTML target: [
+                    allowMissing: false,
+                    alwaysLinkToLastBuild: false, 
+                    keepAll: false, 
+                    reportDir: 'out/allure-report', 
+                    reportFiles: 'index.html', 
+                    reportName: 'HTML Report', 
+                    reportTitles: ''
+                ]
+
+            }
+        }
     }
 }
 
