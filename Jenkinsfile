@@ -60,7 +60,13 @@ pipeline{
                     reportName: 'HTML Report', 
                     reportTitles: ''
                 ]
-
+                step(
+                    [
+                        $class: 'CucumberReportPublisher',
+                        fileIncludePattern: '*.json',
+                        jsonReportDirectory: 'out/cucumber'
+                ]
+                )
             }
         }
     }
