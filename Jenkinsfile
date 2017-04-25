@@ -48,15 +48,31 @@ pipeline{
             steps{
                 script{
                     def allurePath = tool name: 'Allure 1.5.2', type: 'allure'
-                    cmd("${allurePath}/bin/allure generate -o out/allure-report out/allure")
+                    cmd("${allurePath}/bin/allure generate -o out/publishHTML/allure-report out/allure")
 
                 }
+                cmd("pickles -f features -o out/publishHTML/pickles -l ru --df dhtml --sn \"Trade\"")
+                step(
+                    [$class: 'CukedoctorPublisher', 
+                    featuresDir: 'out/cucumber', 
+                    format: 'HTML', 
+                    hideFeaturesSection: false, 
+                    hideScenarioKeyword: false, 
+                    hideStepTime: false, 
+                    hideSummary: false, 
+                    hideTags: false, 
+                    numbered: true, 
+                    sectAnchors: true, 
+                    title: 'Living Documentation', 
+                    toc: 'RIGHT']
+
+                )
                 publishHTML target: [
                     allowMissing: false,
                     alwaysLinkToLastBuild: false, 
                     keepAll: false, 
-                    reportDir: 'out/allure-report', 
-                    reportFiles: 'index.html', 
+                    reportDir: 'out/publishHTML', 
+                    reportFiles: 'allure-report/index.html, pickles/Index.html', 
                     reportName: 'HTML Report', 
                     reportTitles: ''
                 ]
