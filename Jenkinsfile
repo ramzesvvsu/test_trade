@@ -33,7 +33,16 @@ pipeline{
                 }
             }
         }
+        stage('Test behavior')
+        {
+            
+            steps{
+                timestamps {
+                    cmd("vrunner vanessa --pathvanessa ./Tools\vanessa-behavior\vanessa-behavior.epf --vanessasettings ./tools/vbParams.json --workspace . --ibname /s${connectionString}")
+                }
 
+            }
+        }
     }
 }
 
