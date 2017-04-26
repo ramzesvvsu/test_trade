@@ -43,6 +43,16 @@ pipeline{
 
             }
         }
+        stage('Dim Tests')
+        {
+            
+            steps{
+                timestamps {
+                    cmd("vrunner xunit ./Tools/xUnitFor1C/Tests/Smoke --pathxunit ./Tools/xUnitFor1C/xddTestRunner.epf --reportxunit \"ГенераторОтчетаJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstatus.log --ibname /s${connectionString} --xddConfig ./tools/xUnitParams.json")
+                }
+
+            }
+        }
         stage('Public result')
         {
             steps{
@@ -51,6 +61,8 @@ pipeline{
                     cmd("${allurePath}/bin/allure generate -o out/publishHTML/allure-report out/allure")
 
                 }
+                junit allowEmptyResults: true, testResults: 'out/junit.xml'
+
                 cmd("pickles -f features -o out/publishHTML/pickles -l ru --df dhtml --sn \"Trade\"")
                 step(
                     [$class: 'CukedoctorPublisher', 
