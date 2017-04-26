@@ -1,4 +1,4 @@
-def connectionString
+﻿def connectionString
 def uccode
 def lockParams
 
