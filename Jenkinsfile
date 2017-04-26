@@ -48,7 +48,8 @@ pipeline{
             
             steps{
                 timestamps {
-                    cmd("vrunner xunit ./Tools/xUnitFor1C/Tests/Smoke --pathxunit ./Tools/xUnitFor1C/xddTestRunner.epf --reportxunit \"ГенераторОтчетаJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstatus.log --ibname /s${connectionString} --xddConfig ./tools/xUnitParams.json")
+                    //cmd("vrunner xunit ./Tools/xUnitFor1C/Tests/Smoke --pathxunit ./Tools/xUnitFor1C/xddTestRunner.epf --reportxunit \"ГенераторОтчетаJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstatus.log --ibname /s${connectionString} --xddConfig ./tools/xUnitParams.json")
+                    cmd("vrunner xunit ./Tools/xUnitFor1C/Tests/Smoke --pathxunit ./Tools/xUnitFor1C/xddTestRunner.epf --reportxunit \"123\" --xddExitCodePath ./out/junitstatus.log --ibname /s${connectionString} --xddConfig ./tools/xUnitParams.json")
                 }
 
             }
