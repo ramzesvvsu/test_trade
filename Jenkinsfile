@@ -48,8 +48,8 @@ pipeline{
             
             steps{
                 timestamps {
-                    //cmd("vrunner xunit ./Tools/xUnitFor1C/Tests/Smoke --pathxunit ./Tools/xUnitFor1C/xddTestRunner.epf --reportxunit \"ÃåíåðàòîðÎò÷åòàJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstatus.log --ibname /s${connectionString} --xddConfig ./tools/xUnitParams.json")
-                    cmd("vrunner xunit ./Tools/xUnitFor1C/Tests/Smoke --pathxunit ./Tools/xUnitFor1C/xddTestRunner.epf --reportxunit \"ÃåíåðàòîðÎò÷åòàJUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstatus.log --ibname /s${connectionString} --xddConfig ./tools/xUnitParams.json")
+                    //cmd("vrunner xunit ./Tools/xUnitFor1C/Tests/Smoke --pathxunit ./Tools/xUnitFor1C/xddTestRunner.epf --reportxunit \"Ð“ÐµÐ½ÐµÑ€Ð°Ñ‚Ð¾Ñ€ÐžÑ‚Ñ‡ÐµÑ‚Ð°JUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstatus.log --ibname /s${connectionString} --xddConfig ./tools/xUnitParams.json")
+                    cmd("vrunner xunit ./Tools/xUnitFor1C/Tests/Smoke --pathxunit ./Tools/xUnitFor1C/xddTestRunner.epf --reportxunit \"Ð“ÐµÐ½ÐµÑ€Ð°Ñ‚Ð¾Ñ€ÐžÑ‚Ñ‡ÐµÑ‚Ð°JUnitXML{out/junit.xml}\" --xddExitCodePath ./out/junitstatus.log --ibname /s${connectionString} --xddConfig ./tools/xUnitParams.json")
                 }
 
             }
@@ -105,7 +105,7 @@ def cmd(command) {
     if (isUnix()){
         sh "${command}"
     } else {
-        bat "chcp 1251\n${command}"
-       // bat "chcp 65001\n${command}"
+       // bat "chcp 1251\n${command}"
+        bat "chcp 65001\n${command}"
     }    
 }
