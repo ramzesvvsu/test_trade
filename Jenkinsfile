@@ -13,7 +13,7 @@ pipeline{
         Storage = credentials('Storage_trade_CiBot')
     }
     stages {
-        stage('update test contur'){
+        stage('Обновление тестового контура'){
             steps{
                 timestamps {
                     script {
