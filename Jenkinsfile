@@ -98,6 +98,20 @@ pipeline{
                 )
             }
         }
+        stage('Prepare distr')
+        {
+            steps{
+                timestamps{
+                    cmd("packman load-storage \"${env.StoragePath}\" -use-tool1cd -storage-v ${versionValue}")
+                    cmd("packman make-cf")
+                    cmd("packman make-dist ./tools/package.edf -setup")
+                    cmd("packman zip-dist -out out -name-prefix course_relise")
+
+                    archiveArtifacts artifacts: 'out/*.zip', onlyIfSuccessful: true
+
+                }
+            }
+        }
     }
 }
 
