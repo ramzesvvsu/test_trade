@@ -20,6 +20,7 @@ pipeline{
                     if (env.BUILD_NUMBER.endsWith("0"))
                     {
                                build job: 'cyclo', wait: false
+                               build job: 'cpd', wait: false
                     }
                 }
             }
