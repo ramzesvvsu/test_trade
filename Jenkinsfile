@@ -13,6 +13,17 @@ pipeline{
         Storage = credentials('Storage_trade_CiBot')
     }
     stages {
+        stage('Static analise')
+        {
+            steps{
+                script{
+                    if (env.BUILD_NUMBER.endsWith("0"))
+                    {
+                               build job: 'cyclo', wait: false
+                    }
+                }
+            }
+        }
         stage('Update test database'){
             steps{
                 timestamps {
