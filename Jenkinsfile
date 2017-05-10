@@ -26,7 +26,7 @@ pipeline{
                                build job: 'cpd', wait: false
                     }
                     scannerHome = tool name: 'sonar-scabber', type: 'hudson.plugins.sonar.SonarRunnerInstallation' 
-                       configurationText = readFile encodig: 'UTF-8', file: 'src/cf/Configuration.xml'
+                       configurationText = readFile encodig: 'UTF-8', file: 'src/Configuration.xml'
                         configurationVersion = (configurationText =~ /<Version>(.*)<\/Version>/)[0][1]
                 }
                 withSonarQubeEnv('SonarQube'){
