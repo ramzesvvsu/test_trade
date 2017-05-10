@@ -25,11 +25,12 @@ pipeline{
                                build job: 'cyclo', wait: false
                                build job: 'cpd', wait: false
                     }
-                    scannerHome = tool name: 'sonar-scabber', type: 'hudson.plugins.sonar.SonarRunnerInstallation' 
+                    //scannerHome = tool name: 'sonar-scabber', type: 'hudson.plugins.sonar.SonarRunnerInstallation' 
+                    scannerHome = tool 'sonar-scanner' 
                        configurationText = readFile encodig: 'UTF-8', file: 'src/Configuration.xml'
                         configurationVersion = (configurationText =~ /<Version>(.*)<\/Version>/)[0][1]
                 }
-                withSonarQubeEnv('SonarQube Scanner'){
+                withSonarQubeEnv('SonarQube'){
                     //cmd("${scannerHome}/bin/sonar-scanner -dsonar.projectVersion=${configurationVersion}")
                 }
             }
