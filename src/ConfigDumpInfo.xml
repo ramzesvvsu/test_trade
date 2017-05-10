@@ -10,7 +10,7 @@
 		<Metadata name="Catalog.Товары" id="d23c2494-5986-466f-bdd5-ea91ef80ee16" configVersion="5ae565f4b3370a4ca1838d3cd1caa23c00000000">
 			<Metadata name="Catalog.Товары.Attribute.Реквизит1" id="ea780786-2733-4e99-bada-8e1d8cfdc5e1"/>
 		</Metadata>
-		<Metadata name="Configuration.Конфигурация" id="c0484114-4aad-4125-86ed-71019aee11de" configVersion="f8b025a095d2ad4e8d48649874b6a1a600000000"/>
+		<Metadata name="Configuration.Конфигурация" id="c0484114-4aad-4125-86ed-71019aee11de" configVersion="69418f29d066314aa120a366de8556fa00000000"/>
 		<Metadata name="Document.ПриходнаяНакладная" id="ab57524b-f701-4525-93f5-ecbcb67a959e" configVersion="f0a27eef2cc3d3498aa4ea88448d4b2300000000">
 			<Metadata name="Document.ПриходнаяНакладная.Attribute.Склад" id="097a8004-d59c-4a8c-8c88-2ceabee2d32a"/>
 			<Metadata name="Document.ПриходнаяНакладная.TabularSection.Товары.Attribute.Количество" id="0b017ddd-3a3a-4bc2-ac9b-9fa760af58ca"/>
