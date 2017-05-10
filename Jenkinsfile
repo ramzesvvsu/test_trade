@@ -5,6 +5,9 @@ def lockParams
 def versionText
 def versionValue
 
+def scannerHome
+def configurationText
+def configurationVersion
 pipeline{
     agent{
         label 'VanessaTest2'
@@ -22,6 +25,12 @@ pipeline{
                                build job: 'cyclo', wait: false
                                build job: 'cpd', wait: false
                     }
+                    scannerHome = tool name: 'sonar-scabber', type: 'hudson.plugins.sonar.SonarRunnerInstallation' 
+                       configurationText = readFile encodig: 'UTF-8', file: 'src/cf/Configuration.xml'
+                        configurationVersion = (configurationText =~ /<Version>(.*)<\/Version>/)[0][1]
+                }
+                withSonarQubeEnv('SonarQube'){
+                    cmd("${scannerHome}/bin/sonar-scanner -dsonar.projectVersion=${configurationVersion}")
                 }
             }
         }
