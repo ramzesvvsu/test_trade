@@ -31,7 +31,7 @@ pipeline{
                         configurationVersion = (configurationText =~ /<Version>(.*)<\/Version>/)[0][1]
                 }
                 withSonarQubeEnv('Sonarcube'){
-                    //cmd("${scannerHome}/bin/sonar-scanner -dsonar.projectVersion=${configurationVersion}")
+                    cmd("${scannerHome}/bin/sonar-scanner -dsonar.projectVersion=${configurationVersion}")
                 }
             }
         }
