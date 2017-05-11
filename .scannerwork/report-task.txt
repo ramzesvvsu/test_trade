@@ -1,0 +1,5 @@
+projectKey=ramzesvvsu:ci-cd
+serverUrl=https://sonar.silverbulleters.org
+dashboardUrl=https://sonar.silverbulleters.org/dashboard/index/ramzesvvsu:ci-cd
+ceTaskId=AVvw6hInrGoFFMTWQgq9
+ceTaskUrl=https://sonar.silverbulleters.org/api/ce/task?id=AVvw6hInrGoFFMTWQgq9

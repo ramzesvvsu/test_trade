@@ -30,7 +30,7 @@ pipeline{
                        configurationText = readFile encodig: 'UTF-8', file: 'src/Configuration.xml'
                         configurationVersion = (configurationText =~ /<Version>(.*)<\/Version>/)[0][1]
                 }
-                withSonarQubeEnv('SonarQube'){
+                withSonarQubeEnv('Sonarcube'){
                     //cmd("${scannerHome}/bin/sonar-scanner -dsonar.projectVersion=${configurationVersion}")
                 }
             }
